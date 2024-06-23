@@ -167,3 +167,44 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Education page styles */
+.education-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.education-entry .bubble {
+    flex: 3;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    max-width: 75%; /* Ensures the bubble covers 3/4 of the page */
+}
+
+.education-entry .education-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.education-entry .bubble p {
+    margin-bottom: 0px;
+}
+
+.education-entry .education-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    max-width: 25%; /* Ensures the image covers 1/4 of the page */
+}
+
+.education-entry .education-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.1);
+}
