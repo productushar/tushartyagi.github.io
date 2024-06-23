@@ -3,64 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="index.html" class="logo">My Portfolio</a>
+        <nav>
+            <a href="education.html">Education</a>
+            <a href="career.html">Career</a>
+            <a href="projects.html">Projects</a>
+            <a href="talks.html">Talks</a>
+            <a href="awards.html">Awards</a>
+        </nav>
     </header>
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio website. I am a passionate developer with experience in creating web applications. Explore my projects and get in touch!</p>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+
+    <div class="container">
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Hello, Tushar here! 🙋🏻‍♂️</h1>
+                <p class="pronunciation">[tuh-SHAAR] (he/him/his)</p>
+                <p>💼 SWE Intern @ Quicktron Robotics</p>
+                <p>👨🏻‍🎓 Computer Science Senior @ ASU</p>
+                <p>🔍 FT SWE, PM, Consulting Roles (December 2024)</p>
+                <p>📍 Dallas, Texas</p>
+                <p>🏠 Sharjah, United Arab Emirates</p>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+            <div class="intro-image">
+                <img src="JZ1A6057.jpg" alt="Headshot of Tushar">
             </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
+        </section>
+
+        <section id="about" class="section about">
+            <h2>About me:</h2>
+            <p>With Indian ethnicity but an upbringing in the Middle East’s crown jewel - Dubai, I’ve grown up soaking both the humility and hustle characteristic of a developing economy like India and the grandeur and limitlessness of a country like the Emirates. To top it all off, I came to the United States for college in 2021 to discover what the "American Dream" even meant; And while it has significantly reshaped my worldview, I continue to learn and evolve every day.</p>
+            <p>What’s fascinated me most about the States at least professionally so far, is its work culture. Whether at my research lab or student jobs, there’s a unique energy and approach to getting things done that I’ve noticed here, and I love it. And so at present, I’m looking to extend this experience further into the corporate world. I am open to and actively seeking full-time roles in Software Engineering, Product Management, or Tech Consulting (post-Dec 2024), but also any other opportunities that may align with my skill set!</p>
+            <p>That said, I have a variety of interests beyond my formal education too, and so feel free to reach out about whatever, whenever.</p>
+            <p>Eventually, the goal is to head back and take a risk towards something entrepreneurial. So if you have life advice or a potential opportunity to share, I’d also appreciate that.</p>
+            <p>Thank you for your time, and have a great day!</p>
+        </section>
+        
+        <section id="topics" class="section topics">
+            <h2>I would LOVE to talk or learn about:</h2>
+            <div class="bubbles">
+                <div class="bubble blue">Technology</div>
+                <div class="bubble blue">Entrepreneurship</div>
+                <div class="bubble blue">Startups</div>
+                <div class="bubble blue">GenAI</div>
+                <div class="bubble blue">VR</div>
+                <div class="bubble blue">Machine Learning</div>                
+                <div class="bubble blue">iOS App Development</div>
+                <div class="bubble blue">Web Development</div>
+                <div class="bubble red">Studying Abroad</div>
+                <div class="bubble red">The USA</div>
+                <div class="bubble red">University</div>
+                <div class="bubble red">Leadership</div>
+                <div class="bubble green">The Stock Market</div>
+                <div class="bubble green">Personal Finance/Budgeting</div>
+                <div class="bubble green">Credit Cards</div>
+                <div class="bubble green">Real Estate</div>
+                <div class="bubble brown">Dubai</div>
+                <div class="bubble brown">Running</div>
+                <div class="bubble brown">The Gym</div>
+                <div class="bubble brown">Biking</div>
+                <div class="bubble brown">Travel</div>
+                <div class="bubble brown">Geopolitics</div>
+                <div class="bubble brown">The Global Economic System</div>
+                <div class="bubble brown">Food</div>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Get in touch:</h2>
+            <a href="mailto:tushartyagi@asu.edu">
+            <div class="contact-item">
+                <h3>Email:</h3>
+                <p>tushartyagi@asu.edu</p>
+            </div>
+            </a>
+            <a href="https://www.linkedin.com/in/tushartyagidxb/">
+            <div class="contact-item">
+                <h3>LinkedIn:</h3>
+                <p>linkedin.com/in/tushartyagidxb/</p>
+            </div>
+            </a>
+        </section>
+    </div>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-        </div>
+        <p>&copy; Tushar Tyagi 2024. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
