@@ -83,7 +83,7 @@ header nav a:hover {
 .section p {
     font-size: 1.2rem;
     color: #333333;
-    line-height: 1.6;
+    line-height: 1.6; /* Add line spacing for better readability */
 }
 
 .bubbles {
@@ -91,6 +91,7 @@ header nav a:hover {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: center; /* Center the bubbles */
 }
 
 .bubble {
@@ -171,9 +172,14 @@ a:hover {
 
 hr {
     border: 0;
-    height: 3px; /* Adjust the thickness here */
+    height: 2px; /* Adjust the thickness here */
     background: #eeeeee;
+    color: black;
     margin: 40px 0;
+}
+
+.highlight {
+    color: red; /* Highlight the word LOVE in the heading */
 }
 
 /* Education page styles */
