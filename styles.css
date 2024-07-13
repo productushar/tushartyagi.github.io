@@ -23,7 +23,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #dddddd;
+    color: red;
 }
 
 .container {
@@ -83,7 +83,7 @@ header nav a:hover {
 .section p {
     font-size: 1.2rem;
     color: #333333;
-    line-height: 1.6; /* Add line spacing for better readability */
+    line-height: 1.6;
 }
 
 .bubbles {
@@ -167,6 +167,13 @@ a {
 a:hover {
     color: red;
     text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 3px; /* Adjust the thickness here */
+    background: #eeeeee;
+    margin: 40px 0;
 }
 
 /* Education page styles */
@@ -258,4 +265,105 @@ a:hover {
     border: 1px solid #dddddd;
     border-radius: 10px;
     overflow: hidden;
+}
+
+/* Career page styles */
+.career-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Reduce gap to create less space between entries */
+    position: relative;
+}
+
+.career-entry::before {
+    content: "";
+    position: absolute;
+    left: 100px; /* Center the line based on image size */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #dddddd;
+}
+
+.bubble.career {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    width: calc(100% - 220px); /* Adjust width considering the larger image */
+    text-align: left;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-left: 200px; /* Adjust position considering the larger image */
+    position: relative;
+    min-height: 150px; /* Set a minimum height for better visual structure */
+}
+
+.career-image {
+    flex: 0 0 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: -200px; /* Adjust position to align with bubble */
+    z-index: 1; /* Ensure image is on top */
+}
+
+.career-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.career-details {
+    flex: 3;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.career-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure it uses the full width */
+}
+
+.career-role {
+    flex: 2; /* Allow more space for role title */
+    padding-right: 10px; /* Add padding to the right of the role info */
+}
+
+.career-meta {
+    flex: 1;
+    text-align: right;
+    padding-left: 10px; /* Add padding to the left of the meta info */
+}
+
+.career-description {
+    flex: 1; /* Ensure the description takes available space */
+    margin-top: 5px; /* Reduce margin below the info */
+}
+
+.skill-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px; /* Add space between description and skills */
+}
+
+.skill-bubble {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    display: inline-block;
+    border: 2px solid #dddddd;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.skill-bubble:hover {
+    border-color: #bbbbbb;
+    background-color: #e0e0e0;
 }
